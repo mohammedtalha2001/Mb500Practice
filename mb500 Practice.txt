@@ -51,5 +51,4 @@ SSRS Report:
 class MT_POReportDp extends SrsReportDataProviderPreProcessTempDB
 2. [DatacontractAttribute]
 class MT_POContractClass
-3. [SRSReportParameterAttribute(classstr(MT_SMContractPrecision))]
-class MT_SMDpPrecision extends SrsReportDataProviderPreProcessTempDB
+3. class MT_POController extends ProjectReportsController

@@ -1,0 +1,55 @@
+vertical tab alignment
+operational workspace yes
+detail master form pattern yes
+list page form pattern yes
+Table of Contents form pattern yes
+Simple list form pattern no
+
+
+You create an extension of ProjTable.
+
+You need to configure the extension.
+Country Region Codes
+Created By
+Created Date Time
+Form Ref
+Modified By
+Modified Date Time
+Preview Part Ref
+Tags
+Title Field1
+Title Field2
+
+edt extension
+string size 
+Label
+Help text
+Form help
+Country region codes
+
+extension of inventTable field properties
+Allow edit 
+Label
+
+All methods of interface must be implement in subclass untill and unless the class is abstract
+all methods of interface should be public
+
+dmf 
+
+Batch Job:
+1. SysOperationController extends SysOperationServiceController
+2. [DataContractAttribute]
+class MT_SMSysOperationContract
+3. SysOperationService extends SysOperationServiceBase
+
+
+Number Seq:
+1. class SMNumberSeqModule extends NumberSeqApplicationModule
+
+SSRS Report:
+1. [SRSReportParameterAttribute(classstr(MT_POContractClass))]
+class MT_POReportDp extends SrsReportDataProviderPreProcessTempDB
+2. [DatacontractAttribute]
+class MT_POContractClass
+3. [SRSReportParameterAttribute(classstr(MT_SMContractPrecision))]
+class MT_SMDpPrecision extends SrsReportDataProviderPreProcessTempDB
